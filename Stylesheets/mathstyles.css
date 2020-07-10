@@ -100,3 +100,26 @@ nav ul li ul li a:hover {
     margin: 20%;
     margin-top: 10px;
 }
+footer {
+    text-align: center;
+    background-color: rgba(147, 167, 175, 0.815);
+    line-height: 30px;
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+    color: #8e8ee7;
+    font-weight: bold;
+    padding: 10px;
+}
+a:hover {
+    text-decoration: underline;
+    padding: 10px 10px;
+    color: #ffb000;
+}
+footer a {
+    color: black; 
+    font-weight: normal; 
+    text-decoration: underline; 
+    padding: 0
+}
