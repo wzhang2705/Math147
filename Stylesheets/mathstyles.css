@@ -1,0 +1,102 @@
+* {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Josefin Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+}
+header {
+    background-color: #060629;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: left;
+    padding: 0px;
+    width: 100%;
+}
+nav ul .logo {
+    background-image: url("../Images/newlogo.png");
+    background-size: 40px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    top: -11px;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px;
+    position: relative;
+    text-indent: -9999999px;
+}
+nav ul li {
+    display: inline-block;
+    background-color: none;
+    padding: 25px 10px;
+    position: relative;
+    color: white;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+nav ul li a:hover {
+    color: #ffb000;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #547bcecc;
+    padding: 10px 0px;
+    margin-top: 24px;
+    margin-left: -22px;
+    border-radius: 0px 0px 4px 4px;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li {
+    width: 170px;
+    padding-top: 15px;
+}
+nav ul li ul li:first-child {
+    padding-top: 2px;
+}
+nav ul li ul li a {
+    padding: 10px 15px;
+}
+nav ul li ul li a:hover {
+    background-color: #547bcecc;
+}
+.desktop {
+    display: inline-block;
+}
+.mobile {
+    display: none;
+}
+@media screen and (max-width: 1022px) {
+    .intro {
+        background-size: cover;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .mobile {
+        display: inline-block;
+    }
+    .desktop {
+        display: none;
+    }
+}
+.mobile a:hover {
+    display: block
+}
+.markdown-body {
+    margin: 20%;
+    margin-top: 10px;
+}
