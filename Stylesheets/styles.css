@@ -67,6 +67,7 @@ nav ul li ul li:first-child {
 }
 nav ul li ul li a {
     padding: 10px 15px;
+    text-decoration: none;
 }
 nav ul li ul li a:hover {
     background-color: #547bcecc;
