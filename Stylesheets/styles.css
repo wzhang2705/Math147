@@ -10,14 +10,32 @@ body {
     margin-top: 0;
     background-color: #ffffff;
 }
+@keyframes example {
+    0% {color: #9090d3;}
+    20% {color: #414b85;}
+    70% {color: #072921;}
+    100% {color: #060629;}
+}
+@keyframes back {
+    0% {background-color: #9090d3;}
+    20% {background-color: #414b85;}
+    70% {background-color: #072921;}
+    100% {background-color: #060629;}
+}
 header {
     background-color: #060629;
+    /*background-color: #04221d;*/
     margin-top: 0px;
     margin-right: 0px;
     text-align: left;
     padding: 0px;
     position: fixed;
     width: 100%;
+    animation-name: back;
+    animation-duration: 7s;
+}
+h1 {
+    margin-top: 0px;
 }
 nav ul .logo {
     background-image: url("../Images/newlogo.png");
@@ -74,15 +92,15 @@ nav ul li ul li a:hover {
     background-color: #547bcecc;
 }
 .intro {
-    background-image: url(../Images/autumn.jpeg);
+    background-image: url(../Images/leaves2.jpg);
+    /*background-image: url(../Images/leaves.jpg);*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
     /*color: rgb(236, 217, 176);*/
-    color: white;
+    color: #060629;
     text-align: center;
-    height: 500px;
+    padding: 300px;
 }
 .desktop {
     display: inline-block;
@@ -105,20 +123,47 @@ nav ul li ul li a:hover {
         display: none;
     }
 }
-.intro h1 {
-    padding-top: 225px;
-    padding-bottom: 5px;
+.intro div {
+    margin: auto;
+    /*background-color: rgb(11, 59, 51, 0.9);*/
+    background-color: rgba(77, 110, 201, 0.76);
+    padding: 10px;
+    width: 700px;
+    height: 100px;
+    border: 5px ridge gray;
+    text-align: center;
+    background-position: center;
+    color: #060629;
+    animation-name: example;
+    animation-duration: 5s;
+}
+.intro div h1 {
+    padding-top: 20px;
+    opacity: 100%;
     text-align: center;
     font-size: 50px;
     text-transform: Uppercase;
     letter-spacing: 5px;
 }
+button {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0a3838;
+    color: white;
+    font-size: 12px;
+    background-color: #153d3a;
+    font-family: 'Josefin Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .features {
     background-color: #060629;
+    /*background-color: #04221d;*/
     color: rgb(214, 214, 238);
     padding: 20px;
     margin: auto;
     text-align: center;
+    animation-name: back;
+    animation-duration: 7s;
 }
 .features img {
     width: 200px;
