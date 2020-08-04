@@ -75,7 +75,7 @@ nav ul li ul {
     border-radius: 0px 0px 4px 4px;
 }
 nav ul li:hover ul {
-    display: none; /* change to display: block when links are added */
+    display: block; /* change to display: block when links are added */
 }
 nav ul li ul li {
     width: 170px;
@@ -96,7 +96,7 @@ nav ul li ul li a:hover {
     /*background-image: url(../Images/leaves.jpg);*/
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     /*color: rgb(236, 217, 176);*/
     color: #060629;
     text-align: center;
@@ -120,6 +120,9 @@ nav ul li ul li a:hover {
         display: inline-block;
     }
     .desktop {
+        display: none;
+    }
+    .intro div {
         display: none;
     }
 }
