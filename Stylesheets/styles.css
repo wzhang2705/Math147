@@ -2,9 +2,13 @@
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 0;
     padding: 0;
 }
 body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
     font-family: 'Josefin Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-right: 0;
     margin-top: 0;
@@ -183,6 +187,16 @@ button {
     text-align: center;
     width: 300px;
     line-height: 20px;
+}
+.gallery {
+    background-color: #060629;
+    /*background-color: #04221d;*/
+    color: rgb(214, 214, 238);
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    animation-name: back;
+    animation-duration: 7s;
 }
 .podcast {
     margin-left: 10%;
