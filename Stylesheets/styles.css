@@ -36,7 +36,7 @@ header {
     position: fixed;
     width: 100%;
     animation-name: back;
-    animation-duration: 7s;
+    animation-duration: 5s;
 }
 h1 {
     margin-top: 0px;
@@ -166,7 +166,7 @@ button {
     margin: auto;
     text-align: center;
     animation-name: back;
-    animation-duration: 7s;
+    animation-duration: 5s;
 }
 .features img {
     width: 200px;
@@ -186,14 +186,34 @@ button {
 }
 .gallery {
     background-color: #060629;
-    /*background-color: #04221d;*/
+    /*background-color: #04221d; for green theme*/
     color: rgb(214, 214, 238);
     padding: 20px;
     margin: auto;
     text-align: center;
     animation-name: back;
-    animation-duration: 7s;
+    animation-duration: 5s;
 }
+.row {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 30%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* PODCAST BLOCK */
+
 .podcast {
     margin-left: 10%;
     margin-right: 10%;

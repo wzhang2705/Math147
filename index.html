@@ -16,7 +16,7 @@ This will be a compilation of all the math concepts I have learned.-->
       function greenTheme () {
         document.getElementById("header").style.backgroundColor = "#04221d"; //dark green
         document.getElementById("features").style.backgroundColor = "#04221d";
-        document.getElementById("top").style.backgroundImage = "./Images/leaves.jpg";
+        document.getElementById("top").style.backgroundImage = "url('./Images/leaves.jpg')";
         document.getElementById("name").style.backgroundColor = "rgba(11, 59, 51, 0.7)";
         document.getElementById("name").style.color = "white";
         document.getElementById("themebutton").style.display = "none";
@@ -25,11 +25,28 @@ This will be a compilation of all the math concepts I have learned.-->
       function blueTheme () {
         document.getElementById("header").style.backgroundColor = "#060629"; //dark blue
         document.getElementById("features").style.backgroundColor = "#060629";
-        document.getElementById("top").style.backgroundImage = "../Images/field.jpg";
+        document.getElementById("top").style.backgroundImage = "url('./Images/leaves2.jpg')";
         document.getElementById("name").style.backgroundColor = "rgba(77, 110, 201, 0.76)";
         document.getElementById("name").style.color = "#060629";
         document.getElementById("themebutton2").style.display = "none";
         document.getElementById("themebutton").style.display = "block";
+      }
+      /*
+      function lightTheme () {
+        document.getElementById("header").style.backgroundColor = "#d7eaeb"; //light pastel blue
+        document.getElementById("nav-ul").style.color = "#060629";
+        document.getElementById("features").style.backgroundColor = "#c7d0d8"; //light grey
+        document.getElementById("top").style.backgroundImage = "url('./Images/leaves2.jpg')";
+        document.getElementById("name").style.backgroundColor = "rgba(77, 110, 201, 0.76)";
+        document.getElementById("name").style.color = "#060629";
+        document.getElementById("themebutton3").style.display = "none";
+        document.getElementById("themebutton").style.display = "block";
+      }*/
+      function changeImage () {
+        document.getElementById("dragon").src = "Images/andrew.JPG";
+      }
+      function originalImg () {
+        document.getElementById("dragon").src = "Images/dragon.JPG";
       }
     </script>
 
@@ -37,7 +54,7 @@ This will be a compilation of all the math concepts I have learned.-->
   <body>
     <header id="header">
       <nav>
-        <ul>
+        <ul id="nav-ul">
           <li class="logo"><a href="https://wzhang2705.github.io/">Wen Zhang Logo</a></li>
           <li><a style="font-weight: normal" href="https://wzhang2705.github.io/">Wen Zhang</a></li>
           <li class="desktop"><a href="notes.html">Notes </a>
@@ -75,6 +92,9 @@ This will be a compilation of all the math concepts I have learned.-->
             <button id="themebutton2" style="display: none; background-color: #263069" onclick="blueTheme()">
               Blue
             </button>
+            <!--button id="themebutton3" style="display: none; background-color: #c7d0d8" onclick="lightTheme()">
+              Light
+            </button-->
           </li>
         </ul>
       </nav>
@@ -87,16 +107,25 @@ This will be a compilation of all the math concepts I have learned.-->
       </div>
     </div>
     <section id="features" class="features">
-      <img src="Images/dragon.JPG" alt="Picture of a dragon">
+      <img id="dragon" onmouseover="changeImage()" onmouseout="originalImg()" src="Images/dragon.JPG" alt="Picture of a dragon">
       <p>
         Hello! <br><br>
         Welcome to my personal website. I am a 2A Computer Science and Business
         student at the University of Waterloo.
       </p>
     </section>
-    <section class="gallery">
-      <div>
-        
+    <section style="display: none" class="gallery">
+      <div class="row">
+        <div class="column">
+          <img src="Images/autumn.jpeg">
+          <img src="Images/leaves.jpg">
+          <img src="Images/leaves2.jpg">
+        </div>
+        <div class="column">
+          <img src="Images/sunset.jpg">
+          <img src="Images/field.jpg">
+          <img src="Images/clouds.jpg">
+        </div>
       </div>
     </section>
     <section id="podcast" class="podcast">
