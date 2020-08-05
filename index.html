@@ -44,9 +44,13 @@ This will be a compilation of all the math concepts I have learned.-->
       }*/
       function changeImage () {
         document.getElementById("dragon").src = "Images/andrew.JPG";
+        document.getElementById("myIntro").style.display = "none";
+        document.getElementById("andrewzhan").style.display = "block";
       }
       function originalImg () {
         document.getElementById("dragon").src = "Images/dragon.JPG";
+        document.getElementById("myIntro").style.display = "block";
+        document.getElementById("andrewzhan").style.display = "none";
       }
     </script>
 
@@ -108,10 +112,15 @@ This will be a compilation of all the math concepts I have learned.-->
     </div>
     <section id="features" class="features">
       <img id="dragon" onmouseover="changeImage()" onmouseout="originalImg()" src="Images/dragon.JPG" alt="Picture of a dragon">
-      <p>
+      <p id="myIntro">
         Hello! <br><br>
         Welcome to my personal website. I am a 2A Computer Science and Business
         student at the University of Waterloo.
+      </p>
+      <p id="andrewzhan" style="display: none">
+        Hello! <br><br>
+        I am Andrew Zhan and I have invaded Wen's website. <br>
+        Come to my website instead at andrew-zhan139.github.io/andrewzhan
       </p>
     </section>
     <section style="display: none" class="gallery">
