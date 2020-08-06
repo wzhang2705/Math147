@@ -19,6 +19,8 @@ body {
     20% {color: #414b85;}
     70% {color: #072921;}
     100% {color: #060629;}
+    from {top: -500px;}
+    to {top: 0px;}
 }
 @keyframes back {
     0% {background-color: #9090d3;}
@@ -36,7 +38,7 @@ header {
     position: fixed;
     width: 100%;
     animation-name: back;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 h1 {
     margin-top: 0px;
@@ -137,8 +139,10 @@ nav ul li ul li a:hover {
     padding: 20px;
     border: 5px ridge rgba(137, 147, 175, 0.76);
     color: #060629;
+    position: relative;
     animation-name: example;
-    animation-duration: 5s;
+    animation-duration: 4s;
+    animation-timing-function: ease;
 }
 .intro div h1 {
     padding-top: 8px;
@@ -166,7 +170,7 @@ button {
     margin: auto;
     text-align: center;
     animation-name: back;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 .features img {
     width: 200px;
@@ -192,7 +196,7 @@ button {
     margin: auto;
     text-align: center;
     animation-name: back;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 .row {
     margin: auto;
