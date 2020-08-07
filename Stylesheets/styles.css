@@ -255,20 +255,6 @@ button {
 .column p {
     line-height: 25px;
 }
-/* Summary Chart */
-.column {
-    flex: 20%;
-    padding: 0 4px;
-    margin: 1%;
-}
-.column img {
-    margin-top: 8px;
-    padding: 8px;
-    border: 2px double #9c9cc5;
-    vertical-align: middle;
-    max-width: 70%;
-    max-height: 70%;
-}
 .column h4 {
     margin-bottom: 10%;
     color: #8e8ee7;
@@ -288,6 +274,18 @@ button {
 }
 .summary p {
     line-height: 25px;
+}
+
+/* Art Block */
+.column2 {
+    margin: 0;
+    flex: 20%;
+    padding: 0 4px;
+}
+.column2 img {
+    padding: 8px;
+    border: 2px double #9c9cc5;
+    max-width: 90%;
 }
 
 /* PODCAST BLOCK */

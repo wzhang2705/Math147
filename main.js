@@ -93,7 +93,7 @@ function changeImage() {
 }
 function originalImg() {
     if (count == 0) {
-        document.getElementById("dragon").src = "Images/me2.jpg";
+        document.getElementById("dragon").src = "Images/dragon.JPG";
         count += 1;
     } else {
         document.getElementById("dragon").src = "Images/dragon.JPG";
