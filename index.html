@@ -12,50 +12,11 @@ This will be a compilation of all the math concepts I have learned.-->
       href="https://fonts.googleapis.com/css?family=Josefin+Sans">
     <link rel="stylesheet" type="text/css" href="Stylesheets/styles.css">
 
-    <script>
-      function greenTheme () {
-        document.getElementById("header").style.backgroundColor = "#04221d"; //dark green
-        document.getElementById("features").style.backgroundColor = "#04221d";
-        document.getElementById("top").style.backgroundImage = "url('./Images/leaves.jpg')";
-        document.getElementById("name").style.backgroundColor = "rgba(11, 59, 51, 0.7)";
-        document.getElementById("name").style.color = "white";
-        document.getElementById("themebutton").style.display = "none";
-        document.getElementById("themebutton2").style.display = "block";
-      }
-      function blueTheme () {
-        document.getElementById("header").style.backgroundColor = "#060629"; //dark blue
-        document.getElementById("features").style.backgroundColor = "#060629";
-        document.getElementById("top").style.backgroundImage = "url('./Images/leaves2.jpg')";
-        document.getElementById("name").style.backgroundColor = "rgba(77, 110, 201, 0.76)";
-        document.getElementById("name").style.color = "#060629";
-        document.getElementById("themebutton2").style.display = "none";
-        document.getElementById("themebutton").style.display = "block";
-      }
-      /*
-      function lightTheme () {
-        document.getElementById("header").style.backgroundColor = "#d7eaeb"; //light pastel blue
-        document.getElementById("nav-ul").style.color = "#060629";
-        document.getElementById("features").style.backgroundColor = "#c7d0d8"; //light grey
-        document.getElementById("top").style.backgroundImage = "url('./Images/leaves2.jpg')";
-        document.getElementById("name").style.backgroundColor = "rgba(77, 110, 201, 0.76)";
-        document.getElementById("name").style.color = "#060629";
-        document.getElementById("themebutton3").style.display = "none";
-        document.getElementById("themebutton").style.display = "block";
-      }*/
-      function changeImage () {
-        document.getElementById("dragon").src = "Images/andrew.JPG"; //"Images/me2.jpg"
-        document.getElementById("myIntro").style.display = "none";
-        document.getElementById("andrewzhan").style.display = "block";
-      }
-      function originalImg () {
-        document.getElementById("dragon").src = "Images/dragon.JPG";
-        document.getElementById("myIntro").style.display = "block";
-        document.getElementById("andrewzhan").style.display = "none";
-      }
+    <script type="text/javascript" src="main.js">
     </script>
 
   </head>
-  <body>
+  <body onload="initial()">
     <header id="header">
       <nav>
         <ul id="nav-ul">
@@ -122,19 +83,193 @@ This will be a compilation of all the math concepts I have learned.-->
         I am Andrew Zhan and I have invaded Wen's website. Come to my website instead at <br>
         <a href="andrew-zhan139.github.io/andrewzhan">andrew-zhan139.github.io/andrewzhan</a>
       </p>
+      <img id="glowstick" style="border: none; box-shadow: none; width: 100px; margin: 0; padding: 0" src="Images/glowstick.gif">
     </section>
-    <section style="display: none" class="gallery">
+    <section id = "summary" style="background-color:#060629; animation-name: back" class="gallery">
       <div class="row">
         <div class="column">
-          <img src="Images/autumn.jpeg">
-          <img src="Images/leaves.jpg">
-          <img src="Images/leaves2.jpg">
+          <h1>Awards</h1>
+          <br>
+          <ul>
+            <li>Gerald G. Hatch Scholarship
+              <ul>
+                <li>$8000</li>
+              </ul>
+            </li>
+            <li>President's Scholarship of Distinction
+              <ul>
+                <li>$2000 | University of Waterloo</li>
+              </ul>
+            </li>
+            <li>Faculty of Mathematics Entrance Scholarship
+              <ul>
+                <li>$8000 | University of Waterloo</li>
+              </ul>
+            </li>
+            <li>RCM Level 9 Piano with Honours
+            </li>
+            <li>WISE High School Design Challenge
+              <ul>
+                <li>1st place | WISE UofT Chapter</li>
+              </ul>
+            </li>
+            <li>Social Innovation Challenge
+              <ul>
+                <li>Top 5 Finalist | World Vision 2019</li>
+              </ul>
+            </li>
+            <li>Hack the Barriers
+              <ul>
+                <li>1st place</li>
+              </ul>
+            </li>
+            <li>HP Case Competition
+              <ul>
+                <li>Semi-Finalist | Lazaridis School of Business</li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <div class="column">
-          <img src="Images/sunset.jpg">
-          <img src="Images/field.jpg">
+          <h1>Experiences</h1>
+          <br>
+          <ul>
+            <li>Full Stack Developer
+              <ul>
+                <li>SS&C Technologies</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Swim Instructor & Lifeguard
+              <ul>
+                <li>City of Mississauga</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Math Assistant Teacher
+              <ul>
+                <li>Spirit of Math Schools</li>
+              </ul>
+            </li>
+          </ul>
+          <h1>Commitments</h1>
+          <br>
+          <ul>
+            <li>Communitech Student Ambassador</li>
+          </ul>
+          <ul>
+            <li>Peel Environmental Youth Alliance</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h1>Projects</h1>
+          <br>
+          <ul>
+            <li>Gut Microbiome Simulation
+              <ul>
+                <li>URECS at University of Toronto</li>
+              </ul>
+            </li>
+            <li>Countdown Racket Game</li>
+          </ul>
+          <h4>Hackathon Projects</h4>
+          <ul>
+            <li>Bicy-Eco 
+              <ul>
+                <li>Bike sharing platform | Ellehacks 2020</li>
+              </ul>
+            </li>
+            <li>Ace
+              <ul>
+                <li>AI Interview Prep App | Hack the Valley IV 2020</li>
+              </ul>
+            </li>
+            <li>Q...
+              <ul>
+                <li>Online Queue Tracker | TOHacks 2020</li>
+              </ul>
+            </li>
+            <li>CrimeSeen
+              <ul>
+                <li>Crime City rating map | YorkU Hacks 2019</li>
+              </ul>
+            </li>
+            <li>Echo
+              <ul>
+                <li>Online English Language and Culture Learning Platform | Hack the Barriers 2018</li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
+    </section>
+    <section class="new-section">
+      <h1>Achievements</h1>
+    </section>
+    <section class="gallery">
+      <div class="row">
+        <div class="column">
+          <h1 id="typing" >2019 Social Innovation Challenge</h1>
+          <h1 style="color: #8e8ee6; font-size: 16px">Top 5 Finalist</h1>
+          <p>Last year, I participated in the 2019 Social Innovation Challenge pitch competition by World Vision. Based on the theme of waste management, 
+            the challenge was to pitch a product or service that would target the plastic waste problem in the Philippines city of Iloilo. Our team created 
+            LocalLife, a dual bulk food store and recycling-return center that fosters change through community action. In the end, our team was shortlisted 
+            and was one of the Top 5 Finalists out of 46 applicants.</p><br>
+          <a href="https://challenge.worldvision.ca/en/challenge/waste/?_ga=2.1770162.2003520233.1596731828-102630581.1596731828" target="null">World Vision Social Innovation Challenge</a>
+        </div>
+        <div class="column">
+          <div class="mySlides fade">
+            <img src="Images/LocalLife.PNG" alt="LocalLife">
+          </div>
+          <div class="mySlides fade">
+            <img src="Images/worldvision.jpg" alt="Social Innovation Challenge Team Photo">
+          </div>
+          <div class="mySlides fade">
+            <img src="Images/socialinnovationchallenge.jpg" alt="Social Innovation Challenge Group Photo">
+          </div>
+          <br>
+          <br>
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+      <div style="display: none" class="row">
+        <div class="column">
+          <div class="mySlides2 fade">
+            <img src="Images/LocalLife.PNG" alt="LocalLife">
+          </div>
+          <div class="mySlides2 fade">
+            <img src="Images/worldvision.jpg" alt="Social Innovation Challenge Team Photo">
+          </div>
+          <div class="mySlides2 fade">
+            <img src="Images/socialinnovationchallenge.jpg" alt="Social Innovation Challenge Group Photo">
+          </div>
+          <br>
+          <br>
+          <div style="text-align: center">
+            <span class="dot2"></span>
+            <span class="dot2"></span>
+            <span class="dot2"></span>
+          </div>
+        </div>
+        <div class="column">
+          <h1 id="typing" >Social Innovation Challenge</h1>
+          <h1 style="color: #8e8ee6; font-size: 16px">Top 5 Finalist</h1>
+          <p>Last year, I participated in the 2019 Social Innovation Challenge pitch competition by World Vision. Based on the theme of waste management, 
+            the challenge was to pitch a product or service that would target the plastic waste problem in the Philippines city of Iloilo. Our team created 
+            LocalLife, a dual bulk food store and recycling-return center that fosters change through community action. In the end, our team was shortlisted 
+            and was one of the Top 5 Finalists out of 46 applicants.</p><br>
+          <a href="https://challenge.worldvision.ca/en/challenge/waste/?_ga=2.1770162.2003520233.1596731828-102630581.1596731828" target="null">World Vision Social Innovation Challenge</a>
+        </div>
+      </div>
+    </section>
+    <section class="new-section">
+      <h1>Projects</h1>
     </section>
     <section id="podcast" class="podcast">
       <div>
@@ -142,11 +277,12 @@ This will be a compilation of all the math concepts I have learned.-->
       </div>
       <div>
         <h1>Unmasking Covid-19 Podcast</h1>
+        <br>
         <p>
-          The purpose of this podcast is to talk about personal stories during
-          this pandemic.
-          This podcast aims to bring people together to share different
-          perspectives and experiences. <br><br>
+          I am one of the four hosts for Unmasking Covid-19, a new podcast project that aims to shed light upon many of the unique experiences 
+          people are facing during the pandemic. I hope that in running this podcast, people feel a sense of community from the stories we tell.
+        </p>
+        <p style="text-align: center">
           Find us on:
         </p>
         <div>
@@ -155,6 +291,23 @@ This will be a compilation of all the math concepts I have learned.-->
           <a href="https://www.facebook.com/unmaskingcovid/" target="null">Facebook</a>
           <a href="https://www.instagram.com/unmaskingcovid/" target="null">Instagram</a>
           <a href="https://www.youtube.com/channel/UCd0d4p0TEFHo9kFY72Hzc7w" target="null">Youtube</a>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="row">
+        <div class="column">
+          <div>
+            <img style="max-width: 60%" src="Images/cobwebsim.gif" alt="Cobweb Sim">
+          </div>
+        </div>
+        <div class="column">
+          <h1 id="typing" style="margin: 5%" >Gut Microbiome Simulation</h1>
+          <br>
+          <p>This project is part of the University Research Experience with Complex Systems (URECS) program at the University of Toronto. 
+            This program uses the software, COBWEB (Complex Organized Behaviour Within Environmental Boundaries) to model different types of complex systems in 
+            multiple areas of study. This software uses computer simulations to model certain behaviours or trends and can be used to display results of labs or 
+            test different theories. The model on the left is one of the gut microbiome and how it affects depression in the brain.</p><br>
         </div>
       </div>
     </section>

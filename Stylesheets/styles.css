@@ -5,6 +5,13 @@
     margin-right: 0;
     padding: 0;
 }
+:root {
+    --mainbg: #060629; /*default blue theme*/
+    --accent1: #ffb000;
+    --links: #8e8ee7;
+    --text1: white;
+    --text2: #060629;
+}
 body {
     width: 100%;
     height: 100%;
@@ -27,6 +34,12 @@ body {
     20% {background-color: #414b85;}
     70% {background-color: #072921;}
     100% {background-color: #060629;}
+}
+@keyframes back2 {
+    0% {background-color: #9090d3;}
+    20% {background-color: #414b85;}
+    70% {background-color: #072921;}
+    100% {background-color: #272755;}
 }
 header {
     background-color: #060629;
@@ -131,6 +144,9 @@ nav ul li ul li a:hover {
     .intro div {
         display: none;
     }
+    .row {
+        display: inline-block;
+    }
 }
 .intro div {
     display: inline-block;
@@ -162,6 +178,16 @@ button {
     background-color: #153d3a;
     font-family: 'Josefin Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.new-section {
+    background-color: rgb(28, 46, 97);
+    /*background-color: rgb(209, 62, 4);*/
+    color: white;
+    text-align: center;
+}
+.new-section h1 {
+    padding: 30px;
+    text-transform: uppercase;
+}
 .features {
     background-color: #060629;
     /*background-color: #04221d;*/
@@ -174,7 +200,6 @@ button {
 }
 .features img {
     width: 200px;
-    margin: auto;
     margin-top: 100px;
     margin-bottom: 50px;
     border-radius: 50%;
@@ -182,38 +207,87 @@ button {
     box-shadow: gray 0px 0px 8px;
 }
 .features p {
-    margin: auto;
-    padding: 5px 100px 100px 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    display: block;
+    padding: 5px 100px 5px 100px;
     text-align: center;
     width: 300px;
     line-height: 20px;
 }
 .gallery {
-    background-color: #060629;
+    background-color: #272755;
     /*background-color: #04221d; for green theme*/
     color: rgb(214, 214, 238);
     padding: 20px;
     margin: auto;
     text-align: center;
-    animation-name: back;
+    animation-name: back2;
     animation-duration: 4s;
 }
+.gallery h1 {
+    color: #ffb000;
+}
 .row {
-    margin: auto;
-    display: flex;
+    margin: 5%;
+    display: inline-flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
 /* Create four equal columns that sits next to each other */
 .column {
-    flex: 30%;
-    max-width: 25%;
+    flex: 20%;
     padding: 0 4px;
+    margin: 1%;
 }
 .column img {
     margin-top: 8px;
+    padding: 8px;
+    border: 2px double #9c9cc5;
     vertical-align: middle;
-    width: 100%;
+    max-width: 70%;
+    max-height: 70%;
+}
+.column h1 {
+    margin: 2%;
+}
+.column p {
+    line-height: 25px;
+}
+/* Summary Chart */
+.column {
+    flex: 20%;
+    padding: 0 4px;
+    margin: 1%;
+}
+.column img {
+    margin-top: 8px;
+    padding: 8px;
+    border: 2px double #9c9cc5;
+    vertical-align: middle;
+    max-width: 70%;
+    max-height: 70%;
+}
+.column h4 {
+    margin-bottom: 10%;
+    color: #8e8ee7;
+}
+.column ul li {
+    margin-bottom: 7%;
+    text-align: left;
+}
+.column ul li ul {
+    list-style: none;
+    margin-left: 10%;
+    font-size: 12px;
+}
+.summary h1 {
+    margin: 2%;
+    color: #ffb000;
+}
+.summary p {
+    line-height: 25px;
 }
 
 /* PODCAST BLOCK */
@@ -245,10 +319,10 @@ button {
     width: 100px;
 }
 .podcast p {
-    padding: 20px 20px;
-    text-align: center;
+    padding: 10px;
+    text-align: justify;
     width: 500px;
-    line-height: 20px;
+    line-height: 25px;
 }
 footer {
     text-align: center;
@@ -275,4 +349,49 @@ footer a {
 }
 .mobile a:hover {
     display: block
+}
+.mySlides {
+    display: none
+}
+.mySlides2 {
+    display: none
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #9c9cc5;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot2 {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #9c9cc5;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #ffb000;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
