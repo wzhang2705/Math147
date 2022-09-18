@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/nav/nav';
+import Background from './components/background/background';
+import Scroll from './components/scroll/scroll';
 
 function App() {
+  function scrolling() {
+    console.log("hello")
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <svg height="210" width="500">
+        <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
+      </svg> */}
+      <Background/>
+      <Nav/>
+      <Scroll onScroll={scrolling}/>
     </div>
   );
 }

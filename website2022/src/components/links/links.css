@@ -1,0 +1,29 @@
+/* Style the links inside the navigation bar */
+a {
+    float: left;
+    color: #9176d5;
+    text-align: center;
+    padding: 20px 5px;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 1;
+    /* background-color: red; */
+}
+  
+/* Change the color of links on hover */
+a:hover {
+    color: rgb(122, 6, 238);
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color:rgb(122, 6, 238, 0.4);
+    text-underline-offset: 8px;
+}
+  
+/* Add a color to the active/current link */
+a.active {
+    color: rgb(113, 50, 196);
+}

@@ -1,0 +1,15 @@
+.projects {
+    min-width: 700px;
+    align-items: center;
+    overflow-y: hidden;
+    margin-top: 150px;
+}
+
+.section {
+    min-width: 700px;
+    background-color: rgb(185, 131, 255,0.1);
+    min-height: 300px;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
