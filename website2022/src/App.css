@@ -5,6 +5,10 @@
   letter-spacing: 3px;
 }
 
+h1 {
+  color: rgba(87, 60, 241, 0.5);
+}
+
 *{
   -ms-overflow-style: none;
 }

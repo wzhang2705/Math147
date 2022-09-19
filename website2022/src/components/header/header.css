@@ -9,7 +9,7 @@
     color: rgb(82, 51, 193);
     position: relative;
     min-width: 700px;
-    margin-top: 150px;
+    margin-top: 10%;
 }
 
 p {
@@ -33,7 +33,7 @@ p {
 
 .arrow {
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .arrow span {

@@ -17,10 +17,12 @@ function Nav() {
         <div className="logo"></div>
       </div>
       <div className="topnav">
-        <Links word="home"/>
-        <Links word="projects"/>
-        <Links word="experience"/>
-        <Links word="about"/>
+        <Links word="home" link="#top" target="_self" />
+        <Links word="resume" link="https://drive.google.com/drive/folders/18Troxqx2dAFlaDiShFitxSKintB0Dpii?usp=sharing" target="_blank"/>
+        <Links word="research" link="#research"/>
+        <Links word="work" link="#work"/>
+        <Links word="teaching" link="#teaching"/>
+        <Links word="about" link="#about"/>
       </div>
     </div>
   );

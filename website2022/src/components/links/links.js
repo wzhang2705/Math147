@@ -2,7 +2,7 @@ import './links.css';
 
 function Links(props) {
   return (
-    <a>{props.word}</a>
+    <a href={props.link} target={props.target}>{props.word}</a>
   );
 }
 

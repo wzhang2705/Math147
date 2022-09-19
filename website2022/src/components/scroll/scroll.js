@@ -11,22 +11,22 @@ function Scroll() {
         <ScrollContainer>
         <ScrollPage>
           <div className="scrollPage">
-            <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
+            <Animator animation={batch(Fade(0,1), Sticky(), MoveOut(0, -500))}>
               <Header/>
             </Animator>
           </div>
         </ScrollPage>
-        <ScrollPage>
+        {/* <ScrollPage>
           <div className="scrollPage">
             <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
               <Projects/>
             </Animator>
           </div>
-        </ScrollPage>
+        </ScrollPage> */}
         {/* <ScrollPage>
           <Projects/>
         </ScrollPage> */}
-        <ScrollPage>
+        {/* <ScrollPage>
           <Animator animation={FadeUp}>
             <span style={{ fontSize: "40px" }}>How are you doing? ⛅️</span>
           </Animator>
@@ -49,7 +49,7 @@ function Scroll() {
               That's all folks!
             </span>
           </Animator>
-        </ScrollPage>
+        </ScrollPage> */}
       </ScrollContainer>
     );
 }

@@ -1,7 +1,10 @@
 import './App.css';
 import Nav from './components/nav/nav';
 import Background from './components/background/background';
+import Header from './components/header/header';
+import Projects from './components/projects/projects';
 import Scroll from './components/scroll/scroll';
+import About from './components/about/about';
 
 function App() {
   function scrolling() {
@@ -15,7 +18,11 @@ function App() {
       </svg> */}
       <Background/>
       <Nav/>
+      {/* <Header/>
+      <Projects/> */}
       <Scroll onScroll={scrolling}/>
+      <Projects/>
+      <About/>
     </div>
   );
 }
