@@ -18,6 +18,7 @@ function Nav() {
       </div>
       <div className="topnav">
         <Links word="home" link="#top" target="_self" />
+        <Links word="linkedin" link="https://www.linkedin.com/in/wen-z-waterloocs/" target="_blank" />
         <Links word="resume" link="https://drive.google.com/drive/folders/18Troxqx2dAFlaDiShFitxSKintB0Dpii?usp=sharing" target="_blank"/>
         <Links word="research" link="#research"/>
         <Links word="work" link="#work"/>

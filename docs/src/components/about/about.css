@@ -1,5 +1,13 @@
 .about {
     min-height: 200px;
     background-color: rgb(185, 131, 255,0.1);
-    padding: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+p {
+    color:rgba(178, 127, 244, 1);
+    font-size: 14pt;
 }
