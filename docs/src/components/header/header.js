@@ -15,7 +15,7 @@ function Header() {
           iteration="1"
           fillMode="none">
           wen zhang 💫
-          <p>University of Waterloo // Computer Science & Business</p>
+          <p className="program">University of Waterloo // Computer Science & Business</p>
         </MovingComponent>
         <div className = "intro">
           <MovingComponent
